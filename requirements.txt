@@ -1,0 +1,19 @@
+# Use a virtualenv on Python 3.11 or 3.12 -- NOT the system Python 3.14 interpreter.
+# TensorFlow wheels lag behind new CPython releases and are not yet available
+# for 3.14. On Windows, native GPU support ended at TensorFlow 2.10 (CUDA now
+# requires WSL2); CPU-only is expected and adequate for this dataset size.
+#
+#   py -3.12 -m venv venv
+#   venv\Scripts\activate
+#   pip install -r requirements.txt
+
+tensorflow>=2.15,<2.17
+opencv-python>=4.9
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+tqdm>=4.66
+jupyter
+notebook

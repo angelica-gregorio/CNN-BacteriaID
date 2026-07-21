@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset contents (keep folder structure via .gitkeep, not the images)
+dataset/raw/*
+dataset/segmented/*
+dataset/augmented/*
+!dataset/raw/.gitkeep
+!dataset/segmented/.gitkeep
+!dataset/augmented/.gitkeep
+
+# Training outputs (weights, logs, plots)
+results/*
+!results/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
